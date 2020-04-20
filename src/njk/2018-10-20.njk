@@ -1,11 +1,13 @@
 {% extends '_layouts/detail-entry.njk' %}
 
+{% set entry = data.entries[2] %}
+
 {% block page_title %}Blog entry title{% endblock %}
 
 {% block description %}Blog entry description.{% endblock %}
 
 {% block story %}
-  <h1>Blog headline entry</h1>
-  <h5>Captain's log: Oct. XX, 2018</h5>
+  <h1>{{ entry.title }}</h1>
+  <h5>{{ entry.date }}</h5>
   <p>Interloper crimp spanker Barbary Coast splice the main brace bilged on her anchor black spot chandler trysail salmagundi. Brigantine fire ship scallywag log squiffy bowsprit lateen sail American Main cog smartly. Dance the hempen jig bilge log galleon pirate yard list Barbary Coast Corsair run a rig.</p>
 {% endblock %}
